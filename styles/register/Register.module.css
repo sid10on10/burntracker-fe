@@ -1,0 +1,56 @@
+.registerdiv {
+    background-image: url('/register/gym.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.outdiv {
+    padding: 100px;
+    height: 100vh;
+}
+
+.innerdiv {
+    margin-top: 100px;
+    height: 100%;
+}
+
+.header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #344054;
+}
+
+.para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+.label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+}
+
+.small {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #344054;
+    margin-left: 60px;
+    margin-top: 50px;
+}
