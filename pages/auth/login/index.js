@@ -11,6 +11,25 @@ export default function Register(){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
+    const handleAuth = () => {
+        if(validateEmail(email)){
+            console.log(
+                {
+                    email,
+                    password
+                }
+                )
+        }
+    }
+
+    const validateEmail = (email) => {
+        return String(email)
+          .toLowerCase()
+          .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          );
+      };
+
     return (
         <Box>
             <Grid container>
@@ -21,7 +40,7 @@ export default function Register(){
                             <p className={styles.para}>Please fill your detail to access your account.</p>
                             <Box sx={{ marginTop: '20px' }}>
                                 <p className={styles.label}>Email</p>
-                                <TextField id="outlined-email" type="email" variant="outlined"  sx={{ 
+                                <TextField id="outlined-email" type="email" onChange={() => setEmail(event.target.value)} variant="outlined"  sx={{ 
                                         width: '100%',  
                                         '& .MuiOutlinedInput-root': {
                                             '&.Mui-focused fieldset': {
@@ -47,6 +66,7 @@ export default function Register(){
                                             color: 'black',
                                         }
                                     }} 
+                                    onChange={() => setPassword(event.target.value)}
                                 />                            
                             </Box>
                             <Box sx={{ color: 'black', display: 'flex', justifyContent: 'space-between', marginTop: '20px', fontFamily: 'Inter', fontSize: '14px' }}>
@@ -63,6 +83,7 @@ export default function Register(){
                                         backgroundColor: '#FF4500'
                                     }
                                 }}
+                                onClick={handleAuth}
                                 >Login</Button>
                             </Box>
                             <Box>
