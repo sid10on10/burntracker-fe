@@ -6,32 +6,13 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 import styles from '../../../styles/exercise/Add.module.css';
+import SideBar from '@/components/sidebar';
 
 export default function Add(){
     return (
         <Box sx={{ background: '#F0F0F0', display: 'flex' }}>
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' }, width: '10vw', padding: '30px', backgroundColor: '#F0F0F0', height: '1000px' }}>
-                <Box sx={{ backgroundColor: '#FFFFFF', height: '1000px', borderRadius: '16px' }}>
-                    <Box>
-                        <Stack direction="column">
-                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-                                <Image src="/exercise/home.svg" width="30" height="30" alt="burn tracker side menu"/>
-                            </Box>
-                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-                                <Image src="/exercise/clock.svg" width="30" height="30" alt="burn tracker side menu"/>
-                            </Box>
-                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-                                <Image src="/exercise/run.svg" width="30" height="30" alt="burn tracker side menu"/>
-                            </Box>
-                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-                                <Image src="/exercise/logout.svg" width="30" height="30" alt="burn tracker side menu"/>
-                            </Box>
-                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-                                <Image src="/exercise/clock.svg" width="30" height="30" alt="burn tracker side menu"/>
-                            </Box>
-                        </Stack>
-                    </Box>
-                </Box>
+                <SideBar/>
             </Box>
             <Box sx={{ width: '90vw', backgroundColor: '#F0F0F0', height: '1000px' }}>
                 <Box sx={{ px: '100px', marginTop: '100px', backgroundColor: 'red' }}>

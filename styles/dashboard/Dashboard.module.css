@@ -1,0 +1,159 @@
+.profile_name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.005em;
+    margin-left: 10px;
+}
+
+.exercise_heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.add_exercise {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 90%;
+    height: 211px;
+}
+
+.list_exercise {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 90%;
+    height: 511px;
+}
+
+.info_box {
+    background: #FFFDFD;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.weight_info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.005em;
+    color: #000000;
+}
+
+.info_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    color: #B5ADAD;
+}
+
+.goal_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0C0C0C;
+    margin-left: 100px;
+}
+
+.goal_value {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.welcome_greeting {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.welcome_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 19px;
+    color: rgba(253, 107, 34, 1)
+}
+
+.progress_text { 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.005em;
+    color: #000000;
+}
+
+.exercise_type_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    color: #000000;
+    position: relative;
+    bottom: 17px;
+}
+
+.hour_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    color: #D3D3D3;
+    position: relative;
+    bottom: 17px;
+}
+
+.card_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+}
+
+.steps_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    margin-left: 20px;
+    position: relative;
+    bottom: 20px;
+}
