@@ -125,7 +125,7 @@ export default function Register(){
                                 />                            
                             </Box>
                             <div style={{ marginTop: '20px' }}>
-                                <Collapse in={error} sx={{ width: '405px' }}>
+                                <Collapse in={error} sx={{ width: '255px' }}>
                                     <Alert
                                     severity={type}
                                     action={

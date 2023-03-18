@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Stack, FormControl, InputLabel, Select, MenuItem, TextField } from '@mui/material';
-import Image from 'next/Image';
+import Image from 'next/image';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
@@ -14,7 +14,7 @@ export default function Profile(){
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' }, width: '10vw', padding: '30px', backgroundColor: '#F0F0F0', height: '1000px' }}>
                 <SideBar/>
             </Box>
-            <Box sx={{ width: '90vw', backgroundColor: '#F0F0F0', height: '1000px', px: '50px', py: '50px' }}>
+            <Box sx={{ width: '90vw', backgroundColor: '#F0F0F0', height: '1000px', px: '20px', py: '50px' }}>
                 <Grid container>
                     <Grid item xs={12} sm={12} md={8} sx={{ height: '500px' }}>
                         <Box>
@@ -22,7 +22,7 @@ export default function Profile(){
                             <p className={styles.welcome_text}>Welcome Back</p>
                         </Box>
                         <Box>
-                            <Box sx={{ display: 'flex', justifyContent:'space-between', flexDirection: 'row', paddingRight: '40px', marginTop: '180px' }}>
+                            <Box sx={{ display: 'flex', justifyContent:'space-evenly', flexDirection: 'row', paddingRight: '10px', marginTop: '180px' }}>
                                 <Box sx={{ background: '#1AB0AF', borderRadius: '16px', width: '189px', height: '180px' }}>
                                     <Box sx={{ display: 'flex', px: '40px' }}>
                                         <Image src="/dashboard/running.svg" width="20" height="20" style={{ position: 'relative', top: '20px' }}/>

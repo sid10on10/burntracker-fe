@@ -1,5 +1,5 @@
 import { Box, Button, Collapse, Alert, IconButton, TextField } from '@mui/material';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 import styles from '../../styles/profile/Profile.module.css';
 import SideBar from '@/components/sidebar';
@@ -121,7 +121,9 @@ export default function Profile(){
                                 '& label.Mui-focused': {
                                     color: 'black',
                                 }
-                            }} />
+                            }} 
+                            InputLabelProps={{ shrink: true }}
+                            />
                             <TextField id="outlined-basic" label="Email" variant="outlined" value={email} onChange={(event)=>{
                                 setEmail(event.target.value)
                             }} sx={{
@@ -135,10 +137,12 @@ export default function Profile(){
                                 '& label.Mui-focused': {
                                     color: 'black',
                                 }
-                            }} />
+                            }} 
+                            InputLabelProps={{ shrink: true }}
+                            />
                         </Box>
                         <Box sx={{ display: 'flex', px: '20px', py: '20px' }}>
-                            <TextField id="outlined-basic" label="Mobile" variant="outlined" value={mobile} onChange={(event)=>{
+                            <TextField id="outlined-basic" label="Mobile" type="number" variant="outlined" value={mobile} onChange={(event)=>{
                                 setMobile(event.target.value)
                             }} sx={{ 
                                 width: '100%',  
@@ -150,8 +154,10 @@ export default function Profile(){
                                 '& label.Mui-focused': {
                                     color: 'black',
                                 }
-                            }} />
-                            <TextField id="outlined-basic" label="Age" variant="outlined" value={age} onChange={(event)=>{
+                            }} 
+                            InputLabelProps={{ shrink: true }}
+                            />
+                            <TextField id="outlined-basic" label="Age" type="number" variant="outlined" value={age} onChange={(event)=>{
                                 setAge(event.target.value)
                             }} sx={{
                                 marginLeft: '20px',
@@ -164,7 +170,9 @@ export default function Profile(){
                                 '& label.Mui-focused': {
                                     color: 'black',
                                 }
-                            }} />
+                            }} 
+                            InputLabelProps={{ shrink: true }}
+                            />
                         </Box>
                         <Box sx={{ display: 'flex', px: '20px', py: '20px' }}>
                             <TextField id="outlined-basic" label="Gender" variant="outlined" value={gender} onChange={(event)=>{
@@ -179,8 +187,10 @@ export default function Profile(){
                                 '& label.Mui-focused': {
                                     color: 'black',
                                 }
-                            }} />
-                            <TextField id="outlined-basic" label="Daily calorie target" variant="outlined" value={dailycalorie} onChange={(event)=>{
+                            }} 
+                            InputLabelProps={{ shrink: true }}
+                            />
+                            <TextField id="outlined-basic" label="Daily calorie target" type="number" variant="outlined" value={dailycalorie} onChange={(event)=>{
                                 setDailycalorie(event.target.value)
                             }} sx={{
                                 marginLeft: '20px',
@@ -193,10 +203,12 @@ export default function Profile(){
                                 '& label.Mui-focused': {
                                     color: 'black',
                                 }
-                            }} />
+                            }} 
+                            InputLabelProps={{ shrink: true }}
+                            />
                         </Box>
                         <Box sx={{ display: 'flex', px: '20px', py: '20px' }}>
-                            <TextField id="outlined-basic" label="Weekly calorie target" variant="outlined" value={weeklycalorie} onChange={(event)=>{
+                            <TextField id="outlined-basic" label="Weekly calorie target" type="number" variant="outlined" value={weeklycalorie} onChange={(event)=>{
                                 setWeeklycalorie(event.target.value)
                             }} sx={{ 
                                 width: '100%',  
@@ -208,8 +220,10 @@ export default function Profile(){
                                 '& label.Mui-focused': {
                                     color: 'black',
                                 }
-                            }} />
-                            <TextField id="outlined-basic" label="Daily water consumption" variant="outlined" value={dailywater} onChange={(event)=>{
+                            }}
+                            InputLabelProps={{ shrink: true }}
+                            />
+                            <TextField id="outlined-basic" label="Daily water consumption" type="number" variant="outlined" value={dailywater} onChange={(event)=>{
                                 setDailywater(event.target.value)
                             }} sx={{
                                 marginLeft: '20px',
@@ -222,10 +236,12 @@ export default function Profile(){
                                 '& label.Mui-focused': {
                                     color: 'black',
                                 }
-                            }} />
+                            }}
+                            InputLabelProps={{ shrink: true }}
+                            />
                         </Box>
                         <div style={{ marginTop: '20px', marginLeft: '20px' }}>
-                            <Collapse in={error} sx={{ width: '405px' }}>
+                            <Collapse in={error} sx={{ width: '255px' }}>
                                 <Alert
                                 severity={type}
                                 action={

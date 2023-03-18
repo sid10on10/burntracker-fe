@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
-import Image from 'next/Image';
+import Image from 'next/image';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';

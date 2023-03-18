@@ -31,8 +31,10 @@ export default function Register(){
                 setError(true)
                 setType('success')
                 setMessage(response.data.message)
-                window.localStorage.setItem('accesstoken', response.data.token)
-                router.push('/profile')
+                if(response.data.message == 'Login Successfull'){
+                    window.localStorage.setItem('accesstoken', response.data.token)
+                    router.push('/profile')
+                }
             }
         } catch (error) {
             console.log(error)
@@ -95,7 +97,7 @@ export default function Register(){
                                 <Link href='/auth/forgot'><p style={{ color: '#FF4500' }}>Forgot Password?</p></Link>
                             </Box>
                             <div style={{ marginTop: '20px' }}>
-                                <Collapse in={error} sx={{ width: '405px' }}>
+                                <Collapse in={error} sx={{ width: '255px' }}>
                                     <Alert
                                     severity={type}
                                     action={
