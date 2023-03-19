@@ -1,7 +1,7 @@
 let endpoint = {
-    "dev": "https://dev-webapp.quickblink.io",
+    "dev": "https://hilarious-calf-suit.cyclic.app/",
     "local": "http://localhost:5000",
-    "current": "local"
+    "current": "dev"
 }
 
 let routes = {
