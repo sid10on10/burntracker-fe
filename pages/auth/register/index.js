@@ -33,7 +33,9 @@ export default function Register(){
                 setError(true)
                 setType('success')
                 setMessage(response.data.message)
-                router.push('/auth/login')
+                setTimeout(()=>{
+                    router.push('/auth/login')
+                }, 2000)
             }
         } catch (error) {
             if (error.response.status == 400){
