@@ -38,6 +38,7 @@ export default function Profile(){
                     setGender(response.data.data.profile.gender)
                     setDailyCalorie(response.data.data.profile.dailycalorie)
                     setDailywater(response.data.data.profile.dailywater)
+                    setCalorieused(response.data.data.profile.dailycalorieused)
                 }
             }
         } catch (error) {
@@ -59,20 +60,20 @@ export default function Profile(){
                         </Box>
                         <Box>
                             <Box sx={{ display: 'flex', justifyContent:'space-evenly', flexDirection: 'row', paddingRight: '10px', marginTop: '180px' }}>
-                                <Box sx={{ background: '#1AB0AF', borderRadius: '16px', width: '189px', height: '200px' }}>
+                                {/* <Box sx={{ background: '#1AB0AF', borderRadius: '16px', width: '189px', height: '200px' }}>
                                     <Box sx={{ display: 'flex', px: '40px' }}>
                                         <Image src="/dashboard/running.svg" width="20" height="20" style={{ position: 'relative', top: '20px' }}/>
                                         <p className={styles.card_text}>Steps</p>
                                     </Box>
                                     <p className={styles.steps_text}>2500 <small style={{ fontSize: '16px' }}>Steps</small></p>
-                                </Box>
+                                </Box> */}
                                 <Box sx={{ background: '#FF7545', borderRadius: '16px', width: '189px', height: '200px' }}>
                                     <Box sx={{ display: 'flex', px: '40px' }}>
                                         <Image src="/dashboard/water.svg" width="20" height="20" style={{ position: 'relative', top: '20px' }}/>
                                         <p className={styles.card_text}>Water</p>
                                     </Box>
                                     <Image src="/dashboard/circle1.svg" width="97" height="97" style={{ marginLeft: '40px' }}/>
-                                    <p className={styles.card_text} style={{ position: 'relative', left: '60px' }}>{dailywater}</p>
+                                    <p className={styles.card_text} style={{ position: 'relative', left: '75px' }}>{dailywater}</p>
                                 </Box>
                                 <Box sx={{ background: '#FA5B7E', borderRadius: '16px', width: '189px', height: '200px' }}>
                                     <Box sx={{ display: 'flex', px: '40px' }}>
@@ -88,7 +89,7 @@ export default function Profile(){
                                         <p className={styles.card_text}>Heart rate</p>
                                     </Box>
                                     <Image src="/dashboard/heart-rate.svg" width="97" height="97" style={{ marginLeft: '40px' }}/>
-                                    <p className={styles.card_text} style={{ position: 'relative', left: '60px' }}>72</p>
+                                    <p className={styles.card_text} style={{ position: 'relative', left: '75px' }}>72</p>
                                 </Box>
                             </Box>
                         </Box>

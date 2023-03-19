@@ -108,7 +108,9 @@ export default function Add(){
                 setError(true)
                 setErrortype('success')
                 setMessage(response.data.message)
-                router.push('/exercise/add')
+                setTimeout(()=>{
+                    router.reload()
+                }, 2000)
                 
             }
         } catch (error) {
