@@ -5,12 +5,14 @@ import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import axios from 'axios';
 import CloseIcon from '@mui/icons-material/Close';
 import { endpoint, routes } from '../../../config';
+import { useRouter } from 'next/router';
 
 import styles from '../../../styles/exercise/Add.module.css';
 import SideBar from '@/components/sidebar';
 import { useState, useEffect } from 'react';
 
 export default function Add(){
+    const router = useRouter()
 
     const [reps, setReps] = useState(0)
     const [type, setType] = useState('bodyWeight')
@@ -20,11 +22,25 @@ export default function Add(){
     const [message, setMessage] = useState('')
     const [errortype, setErrortype] = useState('success')
     const [rows, setRows] = useState([])
+    const [name, setName] = useState('')
 
     useEffect(()=>{
         setToken(window.localStorage.getItem('accesstoken'))
         loadExercises(window.localStorage.getItem('accesstoken'))
+        loadProfile(window.localStorage.getItem('accesstoken'))
     }, [])
+
+    async function loadProfile(token){
+        try {
+            let response = await axios.get(endpoint[endpoint['current']]+routes["profile"]["get"], { headers: { 'authorization': token } })
+            console.log(response)
+            if(response.status==200){
+                setName(response.data.data.name)
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
 
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
@@ -92,6 +108,8 @@ export default function Add(){
                 setError(true)
                 setErrortype('success')
                 setMessage(response.data.message)
+                router.push('/exercise/add')
+                
             }
         } catch (error) {
             setError(true)
@@ -127,7 +145,7 @@ export default function Add(){
                 <Box sx={{ px: '100px', marginTop: '100px', backgroundColor: 'red' }}>
                     <Box sx={{ display: 'flex', float: 'right' }}>
                         <Image src="/exercise/profile.svg" width="54" height="54" alt="burn tracker profile pic" style={{ border: '2px solid #FD6B22', borderRadius: '100px' }}/>
-                        <p className={styles.profile_name}>John Doe</p>
+                        <p className={styles.profile_name}>{name}</p>
                     </Box>
                 </Box>
                 <Box sx={{ marginTop: '200px' }}>

@@ -29,7 +29,7 @@ export default function Profile(){
     useEffect(()=>{
         setToken(window.localStorage.getItem('accesstoken'))
         loadProfile(window.localStorage.getItem('accesstoken'))
-      }, [])
+    }, [])
 
     async function loadProfile(token){
         try {
