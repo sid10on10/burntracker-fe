@@ -12,7 +12,6 @@ import styles from '../../../styles/login/Login.module.css';
 export default function Register(){
     const router = useRouter()
 
-
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState(false)
@@ -97,7 +96,7 @@ export default function Register(){
                                 <Link href='/auth/forgot'><p style={{ color: '#FF4500' }}>Forgot Password?</p></Link>
                             </Box>
                             <div style={{ marginTop: '20px' }}>
-                                <Collapse in={error} sx={{ width: '255px' }}>
+                                <Collapse in={error} sx={{ width: '355px' }}>
                                     <Alert
                                     severity={type}
                                     action={

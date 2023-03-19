@@ -14,7 +14,7 @@ export default function SideBar(){
                         </Link>
                     </Box>
                     <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-                        <Link href="/dashboard">
+                        <Link href="/profile">
                             <Image src="/exercise/clock.svg" width="30" height="30" alt="burn tracker side menu"/>
                         </Link>
                     </Box>

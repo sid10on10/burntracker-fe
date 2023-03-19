@@ -29,7 +29,6 @@ export default function Profile(){
     useEffect(()=>{
         setToken(window.localStorage.getItem('accesstoken'))
         loadProfile(window.localStorage.getItem('accesstoken'))
-        // loadUserData(window.localStorage.getItem('accesstoken'))
       }, [])
 
     async function loadProfile(token){
@@ -241,7 +240,7 @@ export default function Profile(){
                             />
                         </Box>
                         <div style={{ marginTop: '20px', marginLeft: '20px' }}>
-                            <Collapse in={error} sx={{ width: '255px' }}>
+                            <Collapse in={error} sx={{ width: '355px' }}>
                                 <Alert
                                 severity={type}
                                 action={

@@ -61,7 +61,7 @@ export default function Register(){
                                 <TextField id="outlined-firstname" type="text" variant="outlined" value={first} onChange={(event)=>{
                                     setFirst(event.target.value)
                                 }} sx={{ 
-                                        width: '50%',  
+                                        width: '80%',  
                                         '& .MuiOutlinedInput-root': {
                                             '&.Mui-focused fieldset': {
                                                 borderColor: '#FF4500',
@@ -78,7 +78,7 @@ export default function Register(){
                                 <TextField id="outlined-lastname" type="text" variant="outlined" value={last} onChange={(event)=>{
                                     setLast(event.target.value)
                                 }} sx={{ 
-                                        width: '50%',  
+                                        width: '80%',  
                                         '& .MuiOutlinedInput-root': {
                                             '&.Mui-focused fieldset': {
                                                 borderColor: '#FF4500',
@@ -95,7 +95,7 @@ export default function Register(){
                                 <TextField id="outlined-email" type="email" variant="outlined" value={email} onChange={(event)=>{
                                     setEmail(event.target.value)
                                 }} sx={{ 
-                                        width: '50%',  
+                                        width: '80%',  
                                         '& .MuiOutlinedInput-root': {
                                             '&.Mui-focused fieldset': {
                                                 borderColor: '#FF4500',
@@ -112,7 +112,7 @@ export default function Register(){
                                 <TextField id="outlined-firstname" type="password" variant="outlined" value={password} onChange={(event)=>{
                                     setPassword(event.target.value)
                                 }} sx={{ 
-                                        width: '50%',  
+                                        width: '80%',  
                                         '& .MuiOutlinedInput-root': {
                                             '&.Mui-focused fieldset': {
                                                 borderColor: '#FF4500',
@@ -125,7 +125,7 @@ export default function Register(){
                                 />                            
                             </Box>
                             <div style={{ marginTop: '20px' }}>
-                                <Collapse in={error} sx={{ width: '255px' }}>
+                                <Collapse in={error} sx={{ width: '355px' }}>
                                     <Alert
                                     severity={type}
                                     action={
@@ -150,7 +150,7 @@ export default function Register(){
                             <Box sx={{ marginTop: '20px' }}>
                                 <Button variant="contained" onClick={()=>{
                                     register()
-                                }} sx={{ backgroundColor: '#FF4500', width: '50%', height: '44px', textTransform: 'capitalize' }}>Register</Button>
+                                }} sx={{ backgroundColor: '#FF4500', width: '80%', height: '44px', textTransform: 'capitalize' }}>Register</Button>
                             </Box>
                             <Box>
                                 <p className={styles.small}>Already have an account ? <Link href='/auth/login'><strong style={{ color: '#FF4500' }}>Login</strong></Link></p>

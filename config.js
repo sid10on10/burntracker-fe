@@ -19,27 +19,13 @@ let routes = {
         "get": "/profile",
         "post": "/profile"
     },
-    "page": {
-        "list": "/api/pages/",
-        "detail": "/api/pages/",
-        "update": "/api/pages/",
-        "create": "/api/pages/",
-        "duplicate": "/api/duplicate/"
+    "exercise": {
+        "add": "/exercise/add",
+        "logs": "/exercise/logs"
     },
     "user": {
         "detail": '/api/get/user/',
         "update": '/api/update/user/'
-    },
-    "subscription": {
-        "stripe": "/api/subscription/stripe/create",
-        "create": "/api/subscription/create/",
-        "update": "/api/subscription/update/",
-        "cancel": "/api/subscription/cancel/",
-        "invoice": "/api/subscription/invoice/raw/"
-    },
-    "issues": {
-        "get": "/api/get/issues/",
-        "get_page": "/api/get/issues/?page_id="
     }
 }
 
